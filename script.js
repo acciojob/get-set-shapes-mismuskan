@@ -1,24 +1,30 @@
 //complete this code
 class Rectangle {
 	constructor(width,height){
-		get width(){
 			this.width=width;
-		}
-		get height{
 			this.height=height;
+		
+		get getWidth(){
+			return this.wreturn dth;
+		}
+		get getHeight(){
+		return this.height;
 		}
 		getArea()
 		{
-			let area=width*height;
+			let area=this.width*this.height;
 			return area;
 		}
 	}
 }
 
 class Square extends Animal {
-	super(height,width)
+	constructor(side)
+	{
+	super(side,side);
+	}
 	getPerimeter(){
-		let peri=(2*height)+(2*width);
+		let peri=4*this.getWidth();
 		return peri;
 	}
 }
